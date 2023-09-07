@@ -1,0 +1,18 @@
+@import "~bootstrap/scss/bootstrap";
+html,
+body {
+  margin: 8;
+  padding: 8;
+  box-sizing: border-box;
+}
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  height: 100vh;
+}
+
+h1 {
+  color: red;
+}
