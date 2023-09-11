@@ -1,4 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
+@import "./components/header";
+@import "./pages/blogs.scss";
 html,
 body {
   margin: 8;
@@ -11,6 +13,10 @@ body {
   flex-direction: column;
   background-color: aqua;
   height: 100vh;
+}
+
+.content-page {
+  padding: 0 24px;
 }
 
 h1 {

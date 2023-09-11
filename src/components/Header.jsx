@@ -1,6 +1,8 @@
 import React from "react";
 // import { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
+import Nav from "react-bootstrap/Nav";
+import { Link } from "react-router-dom";
 
 const arrayHeader = [
   { name: "Home", link: "home" },
@@ -10,16 +12,19 @@ const arrayHeader = [
 
 const Header = () => {
   return (
-    <div>
-      <Button variant="primary">Primary</Button>{" "}
-      <Button variant="secondary">Secondary</Button>{" "}
-      <Button variant="success">Success</Button>{" "}
-      <Button variant="warning">Warning</Button>{" "}
-      <Button variant="danger">Danger</Button>{" "}
-      <Button variant="info">Info</Button>{" "}
-      <Button variant="light">Light</Button>{" "}
-      <Button variant="dark">Dark</Button>
-      <Button variant="link">Link</Button>
+    <div className="header">
+      <Nav>
+        <Nav.Item>
+          <Link className="nav-link" to="/home">
+            Home
+          </Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Link className="nav-link" to="/blog">
+            Blog
+          </Link>
+        </Nav.Item>
+      </Nav>
     </div>
   );
 };
