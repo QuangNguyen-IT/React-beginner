@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "./Header";
 import { Outlet } from "react-router-dom";
-export const WrapperLayout = () => {
+
+const WrapperLayout = () => {
   return (
     <>
       <Header></Header>
@@ -11,3 +12,5 @@ export const WrapperLayout = () => {
     </>
   );
 };
+
+export default WrapperLayout;

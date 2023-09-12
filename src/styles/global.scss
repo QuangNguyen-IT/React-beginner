@@ -1,24 +1,23 @@
 @import "~bootstrap/scss/bootstrap";
 @import "./components/header";
-@import "./pages/blogs.scss";
+@import "./pages/blogs";
+
 html,
 body {
-  margin: 8;
-  padding: 8;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-
 .main-layout {
   display: flex;
   flex-direction: column;
+  width: 100%;
   background-color: aqua;
   height: 100vh;
 }
-
 .content-page {
   padding: 0 24px;
 }
-
 h1 {
   color: red;
 }

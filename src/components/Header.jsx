@@ -1,13 +1,12 @@
 import React from "react";
-// import { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
 
 const arrayHeader = [
   { name: "Home", link: "home" },
-  { name: "Blog", link: "blogs" },
-  { name: "Author", link: "author" },
+  { name: "Blogs", link: "blogs" },
+  { name: "Author", link: "authors" },
 ];
 
 const Header = () => {

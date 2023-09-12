@@ -1,10 +1,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { WrapperLayout } from "./components/WrapperLayout";
-import Blog from "./pages/blogs/Blogs";
-import Home from "./pages/homes/Home";
-
-function Appfunction() {
+import WrapperLayout from "./components/WrapperLayout";
+import Home from "./pages/home/Home";
+import Blogs from "./pages/blogs/Blogs";
+function AppFunction() {
   return (
     <div className="main-layout">
       <BrowserRouter>
@@ -12,11 +11,12 @@ function Appfunction() {
           <Route element={<WrapperLayout />}>
             <Route path="/" element={<Navigate to="/home" />} />
             <Route path="home" element={<Home />} />
-            <Route path="blog" element={<Blog />} />
+            <Route path="blog" element={<Blogs />} />
           </Route>
         </Routes>
       </BrowserRouter>
     </div>
   );
 }
-export default Appfunction;
+
+export default AppFunction;
